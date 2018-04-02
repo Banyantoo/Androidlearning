@@ -2,21 +2,36 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
 
-   <!-- &lt;!&ndash;大小&ndash;&gt;
-    <size android:width="20dp"
-        android:height="20dp"/>-->
+    <!--
+    rectangle: 矩形，默认的形状，可以画出直角矩形、圆角矩形、弧形等
+    oval: 椭圆形，用得比较多的是画正圆
+    line: 线形，可以画实线和虚线
+    ring: 环形，可以画环形进度条
 
-    <!--设置圆角-->
+    -->
+
+    <!--大小-->
+    <size
+        android:width="20dp"
+        android:height="20dp" />
+
+    <!--角度-->
     <corners android:radius="5dp"/>
 
-    <!--<solid android:color="#5b56dc"/>-->
+    <!--填充背景-->
+    <solid android:color="#5b56dc" />
 
-    <stroke android:color="#808009" android:width="2dp" android:dashGap="1dp"
-        android:dashWidth="2dp"/>
+    <!--边框背景，宽度，边框线类型-->
+    <stroke
+        android:width="2dp"
+        android:color="#808009"
+        android:dashGap="1dp"
+        android:dashWidth="2dp" />
 
-    <padding android:bottom="10dp"
-        />
-
+    <!--填充-->
+    <padding android:bottom="10dp" />
+    <!--渐变-->
+    <gradient />
 
 
 </shape>
